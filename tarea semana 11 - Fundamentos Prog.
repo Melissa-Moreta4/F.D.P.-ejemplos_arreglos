@@ -1,0 +1,19 @@
+#definir una matriz 3 * 3.
+matriz = [
+    [
+        [2,4,6,],
+        [8,10,12],
+        [14,16,18]
+    ]
+
+]
+
+valor_a_search = 21
+
+for fila in range(len(matriz)):
+    for column in range(len(matriz[fila])):
+        if matriz[fila][column] == valor_a_search:
+            print(f"find la position ({fila},{column})")
+        break
+else:
+    print("no found")
